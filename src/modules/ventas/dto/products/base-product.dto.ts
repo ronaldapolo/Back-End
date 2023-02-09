@@ -24,22 +24,13 @@ import {
 
   export class BaseProductDto {
 
-    //@Allow()
-    //readonly enrollment: EnrollmentEntity;
-
-    //@Allow()
-    //readonly projectPlan: ProjectPlanEntity;
+    
 
     @IsNotEmpty(isNotEmptyValidationOptions())
     @IsString(isStringValidationOptions())
     readonly title: string;
 
-  /*   @IsNotEmpty(isNotEmptyValidationOptions())
-    @IsBoolean(isBooleanValidationOptions())
-    readonly approved: boolean; */
-
-
-    //shared validacion option para observar los mensajes de forma clara
+  
     @IsNotEmpty(isNotEmptyValidationOptions())
     @IsNumber(isNumberValidationOptions())
     @IsPositive(isPositiveValidationOptions)
